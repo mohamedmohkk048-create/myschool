@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#17152f">
+<title>Houari Kadour Exames</title>
+<style>
+:root{--bg:#0d1020;--panel:#171c31;--panel2:#202943;--purple:#7138e8;--purple2:#8c5cf6;--text:#f7f7ff;--muted:#aeb7ce;--line:rgba(255,255,255,.09);--green:#16966c;--orange:#e39a43;--cyan:#3da9b5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 15% 0%,#272052 0,transparent 30%),var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif;min-height:100vh}
+button,input{font:inherit}.layout{display:grid;grid-template-columns:270px 1fr;min-height:100vh}.sidebar{background:rgba(13,17,34,.96);border-left:1px solid var(--line);padding:22px 16px;position:sticky;top:0;height:100vh;overflow:auto}
+.brand{display:flex;align-items:center;gap:12px;padding:8px 5px 24px}.logo{width:48px;height:48px;border-radius:15px;background:linear-gradient(135deg,#a78bfa,#5426c9);display:grid;place-items:center;font-size:24px;font-weight:bold;box-shadow:0 8px 25px #7138e855}.brand h2{font-size:16px;margin:0 0 5px}.brand small{color:var(--muted);font-size:11px}
+.side-title{color:#8994b2;font-size:11px;margin:20px 10px 9px}.nav-btn{border:0;color:#dce2f4;background:transparent;width:100%;text-align:right;padding:13px 12px;border-radius:11px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;margin:4px 0;transition:.2s}.nav-btn:hover,.nav-btn.active{background:#7138e82b;color:white}.count{font-size:11px;color:#c7b7ff;background:#7138e833;border:1px solid #8d65ed55;border-radius:20px;padding:3px 8px}.sidebar-note{margin-top:28px;padding:14px;border:1px solid var(--line);border-radius:14px;color:var(--muted);font-size:12px;line-height:1.8}
+main{padding:24px;max-width:1500px;width:100%;margin:auto}.topbar{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:20px}.welcome{color:var(--muted);font-size:13px}.top-actions{display:flex;gap:10px;align-items:center}.pill{background:#1e2440;border:1px solid var(--line);padding:9px 13px;border-radius:30px;color:#e5e7ff;font-size:12px}
+.hero{background:linear-gradient(115deg,#4820a7,#7538df 55%,#4d2ab1);border:1px solid #a88af755;border-radius:20px;padding:28px 30px;position:relative;overflow:hidden;margin-bottom:22px}.hero:after{content:"✦";position:absolute;font-size:190px;opacity:.08;left:35px;top:-60px}.hero h1{font-size:clamp(23px,3vw,34px);margin:0 0 10px}.hero p{margin:0;color:#eee7ff;line-height:1.9;max-width:700px;font-size:14px}.hero-tag{display:inline-block;background:#ffffff20;border:1px solid #ffffff35;border-radius:30px;padding:6px 12px;font-size:11px;margin-bottom:13px}
+.search-wrap{display:flex;gap:10px;margin:20px 0 28px}.search{flex:1;background:#171d32;border:1px solid var(--line);border-radius:13px;padding:14px 16px;color:white;outline:none}.search:focus{border-color:#966dff}.search-btn,.primary-btn{border:0;border-radius:12px;background:var(--purple);color:white;padding:0 22px;cursor:pointer}.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:25px 0 14px}.section-head h2{font-size:19px;margin:0 0 6px}.section-head p{margin:0;color:var(--muted);font-size:12px}.section-head a{color:#c5b2ff;text-decoration:none;font-size:12px}
+.level-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.level-card{background:var(--panel);border:1px solid var(--line);border-radius:17px;overflow:hidden;transition:.22s}.level-card:hover{transform:translateY(-4px);border-color:#8d69e9}.level-banner{height:9px}.level-card:nth-child(1) .level-banner{background:var(--cyan)}.level-card:nth-child(2) .level-banner{background:var(--green)}.level-card:nth-child(3) .level-banner{background:var(--orange)}.level-content{padding:18px}.level-icon{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;font-size:25px;background:#ffffff12;margin-bottom:13px}.level-card h3{margin:0 0 7px;font-size:17px}.level-card p{color:var(--muted);font-size:12px;line-height:1.7;margin:0 0 15px}.year-list{display:grid;gap:7px}.year-btn{border:1px solid var(--line);background:#202943;color:#e9edfa;text-align:right;padding:10px 12px;border-radius:9px;cursor:pointer;font-size:12px;display:flex;justify-content:space-between;align-items:center}.year-btn:hover{background:#34265e;border-color:#8d69e9}
+.extra-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.extra{background:var(--panel);border:1px solid var(--line);padding:16px;border-radius:14px;display:flex;align-items:center;gap:11px;font-size:13px}.extra span{font-size:22px}
+.content-panel{display:none;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px;margin-top:22px}.content-panel.show{display:block}.back-btn{background:#272d46;color:#e7e9f5;border:1px solid var(--line);padding:9px 13px;border-radius:10px;cursor:pointer;margin-bottom:16px}.content-panel h2{margin:0 0 8px}.subtext{color:var(--muted);font-size:13px;margin:0 0 18px}.subject-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.subject-btn{border:1px solid var(--line);background:#202943;color:white;padding:15px 10px;border-radius:12px;cursor:pointer}.subject-btn:hover,.subject-btn.active{border-color:#9a76ff;background:#34265e}.exam-list{display:grid;gap:12px;margin-top:18px}.exam{background:#202943;border:1px solid var(--line);border-radius:13px;padding:15px}.exam-top{display:flex;justify-content:space-between;gap:12px;align-items:center}.exam h4{margin:0 0 6px;font-size:14px}.exam p{margin:0;color:var(--muted);font-size:12px}.exam-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}.small-btn{border:1px solid var(--line);background:#303957;color:white;padding:8px 12px;border-radius:9px;cursor:pointer;font-size:12px}.small-btn.solution{background:#176b55;border-color:#248c70}.solution-box{display:none;margin-top:12px;padding:13px;border-radius:10px;background:#111b2b;color:#dce8f6;line-height:1.9;font-size:13px}.solution-box.show{display:block}.empty{padding:24px;text-align:center;color:var(--muted);background:#202943;border-radius:12px}
+footer{text-align:center;color:#7f8aa7;font-size:11px;padding:28px 10px}
+.mobile-menu{display:none}
+@media(max-width:1050px){.level-grid{grid-template-columns:repeat(2,1fr)}.extra-grid{grid-template-columns:repeat(2,1fr)}.subject-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:720px){.layout{display:block}.sidebar{position:fixed;z-index:10;right:-290px;width:270px;transition:.25s;box-shadow:-10px 0 35px #0008}.sidebar.open{right:0}.mobile-menu{display:block;border:1px solid var(--line);background:#202943;color:white;border-radius:10px;padding:9px 12px}.topbar{align-items:flex-start}main{padding:15px}.hero{padding:22px 18px}.level-grid{grid-template-columns:1fr}.extra-grid{grid-template-columns:repeat(2,1fr)}.subject-grid{grid-template-columns:repeat(2,1fr)}.search-btn{padding:0 14px}.exam-top{align-items:flex-start;flex-direction:column}}
+@media(max-width:390px){.extra-grid{grid-template-columns:1fr}.pill{display:none}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="brand"><div class="logo">HK</div><div><h2>Houari Kadour Exames</h2><small>منصة التعليم والاختبارات</small></div></div>
+  <div class="side-title">القائمة الرئيسية</div>
+  <button class="nav-btn active" onclick="goHome()">🏠 الرئيسية <span class="count">Home</span></button>
+  <button class="nav-btn" onclick="openLevel('ابتدائي')">📘 التعليم الابتدائي <span class="count">5</span></button>
+  <button class="nav-btn" onclick="openLevel('متوسط')">📗 التعليم المتوسط <span class="count">4</span></button>
+  <button class="nav-btn" onclick="openLevel('ثانوي')">📕 التعليم الثانوي <span class="count">3</span></button>
+  <div class="side-title">أقسام إضافية</div>
+  <button class="nav-btn" onclick="showExtra('الركن الإسلامي')">☪️ الركن الإسلامي</button>
+  <button class="nav-btn" onclick="showExtra('قصص وحكايات')">📚 قصص وحكايات</button>
+  <button class="nav-btn" onclick="showExtra('ألغاز وفوازير')">🧩 ألغاز وفوازير</button>
+  <button class="nav-btn" onclick="showExtra('وثائق الأساتذة')">🗂️ وثائق الأساتذة</button>
+  <div class="sidebar-note">📌 منصة تعليمية لمراجعة الدروس والتدرب على الاختبارات. أضف ملفاتك ومواضيعك لتصبح مكتبتك الدراسية متكاملة.</div>
+</aside>
+<main>
+  <div class="topbar"><div style="display:flex;gap:10px;align-items:center"><button class="mobile-menu" onclick="toggleMenu()">☰</button><div><div style="font-weight:bold">مرحبا بك في منصتك التعليمية</div><div class="welcome">كل ما تحتاجه للمراجعة والنجاح في مكان واحد</div></div></div><div class="top-actions"><span class="pill">🇩🇿 الجزائر</span><span class="pill">نسخة PRO</span></div></div>
+  <section class="hero"><span class="hero-tag">منصتك التعليمية الجزائرية</span><h1>تفوقك الدراسي يبدأ من هنا ✨</h1><p>اكتشف الاختبارات والتمارين والدروس حسب الطور والسنة والمادة. اختر مستواك وابدأ رحلة المراجعة خطوة بخطوة.</p></section>
+  <div class="search-wrap"><input class="search" id="searchInput" placeholder="ابحث عن سنة دراسية أو مادة أو اختبار..." oninput="searchSite()"><button class="search-btn" onclick="searchSite()">بحث</button></div>
+  <section id="homeView">
+    <div class="section-head"><div><h2>الأطوار التعليمية</h2><p>اختر الطور الدراسي للوصول إلى السنوات والمواد</p></div></div>
+    <div class="level-grid">
+      <article class="level-card" data-search="ابتدائي تحضيري أولى ثانية ثالثة رابعة خامسة"><div class="level-banner"></div><div class="level-content"><div class="level-icon">📘</div><h3>التعليم الابتدائي</h3><p>موارد تعليمية واختبارات لجميع سنوات المرحلة الابتدائية.</p><div class="year-list">
+        <button class="year-btn" onclick="openYear('القسم التحضيري','ابتدائي')">القسم التحضيري <b>←</b></button>
+        <button class="year-btn" onclick="openYear('السنة الأولى ابتدائي','ابتدائي')">السنة الأولى ابتدائي <b>←</b></button>
+        <button class="year-btn" onclick="openYear('السنة الثانية ابتدائي','ابتدائي')">السنة الثانية ابتدائي <b>←</b></button>
+        <button class="year-btn" onclick="openYear('السنة الثالثة ابتدائي','ابتدائي')">السنة الثالثة ابتدائي <b>←</b></button>
+        <button class="year-btn" onclick="openYear('السنة الرابعة ابتدائي','ابتدائي')">السنة الرابعة ابتدائي <b>←</b></button>
+        <button class="year-btn" onclick="openYear('السنة الخامسة ابتدائي','ابتدائي')">السنة الخامسة ابتدائي <b>←</b></button>
+      </div></div></article>
+      <article class="level-card" data-search="متوسط أولى ثانية ثالثة رابعة شهادة التعليم المتوسط bem"><div class="level-banner"></div><div class="level-content"><div class="level-icon">📗</div><h3>التعليم المتوسط</h3><p>اختبارات وفروض وتمارين للمراجعة والتحضير الجيد.</p><div class="year-list">
+        <button class="year-btn" onclick="openYear('السنة الأولى متوسط','متوسط')">السنة الأولى متوسط <b>←</b></button>
+        <button class="year-btn" onclick="openYear('السنة الثانية متوسط','متوسط')">السنة الثانية متوسط <b>←</b></button>
+        <button class="year-btn" onclick="openYear('السنة الثالثة متوسط','متوسط')">السنة الثالثة متوسط <b>←</b></button>
+        <button class="year-btn" onclick="openYear('السنة الرابعة متوسط','متوسط')">السنة الرابعة متوسط <b>←</b></button>
+      </div></div></article>
+      <article class="level-card" data-search="ثانوي أولى ثانية ثالثة بكالوريا"><div class="level-banner"></div><div class="level-content"><div class="level-icon">📕</div><h3>التعليم الثانوي</h3><p>مواد وشعب متنوعة للتحضير للفروض والاختبارات والبكالوريا.</p><div class="year-list">
+        <button class="year-btn" onclick="openYear('السنة الأولى ثانوي','ثانوي')">السنة الأولى ثانوي <b>←</b></button>
+        <button class="year-btn" onclick="openYear('السنة الثانية ثانوي','ثانوي')">السنة الثانية ثانوي <b>←</b></button>
+        <button class="year-btn" onclick="openYear('السنة الثالثة ثانوي','ثانوي')">السنة الثالثة ثانوي <b>←</b></button>
+      </div></div></article>
+    </div>
+    <div class="section-head"><div><h2>أقسام متنوعة</h2><p>مساحات إضافية للمعرفة والتعلم</p></div></div>
+    <div class="extra-grid">
+      <div class="extra" onclick="showExtra('الركن الإسلامي')"><span>☪️</span> الركن الإسلامي</div>
+      <div class="extra" onclick="showExtra('قصص وحكايات')"><span>📚</span> قصص وحكايات</div>
+      <div class="extra" onclick="showExtra('ألغاز وفوازير')"><span>🧩</span> ألغاز وفوازير</div>
+      <div class="extra" onclick="showExtra('وثائق الأساتذة')"><span>🗂️</span> وثائق الأساتذة</div>
+    </div>
+  </section>
+  <section class="content-panel" id="contentPanel">
+    <button class="back-btn" onclick="goHome()">→ العودة إلى الرئيسية</button>
+    <h2 id="panelTitle">السنة الدراسية</h2><p class="subtext" id="panelSubtitle">اختر المادة لعرض الموارد</p>
+    <div class="subject-grid" id="subjectGrid"></div>
+    <div id="examArea"></div>
+  </section>
+  <footer>© 2026 Houari Kadour Exames — جميع الحقوق محفوظة</footer>
+</main>
+</div>
+<script>
+const subjectsByLevel={
+  'ابتدائي':['اللغة العربية','الرياضيات','التربية الإسلامية','التربية العلمية','اللغة الفرنسية','التربية المدنية','التاريخ والجغرافيا'],
+  'متوسط':['اللغة العربية','الرياضيات','العلوم الطبيعية','العلوم الفيزيائية','اللغة الفرنسية','اللغة الإنجليزية','التاريخ والجغرافيا','التربية الإسلامية','التربية المدنية'],
+  'ثانوي':['الرياضيات','اللغة العربية','العلوم الطبيعية','العلوم الفيزيائية','اللغة الفرنسية','اللغة الإنجليزية','التاريخ والجغرافيا','الفلسفة','العلوم الإسلامية']
+};
+let currentYear='',currentLevel='',currentSubject='';
+function toggleMenu(){document.getElementById('sidebar').classList.toggle('open')}
+function goHome(){document.getElementById('homeView').style.display='block';document.getElementById('contentPanel').classList.remove('show');document.getElementById('sidebar').classList.remove('open');document.getElementById('searchInput').value='';document.querySelectorAll('.level-card').forEach(x=>x.style.display='')}
+function openLevel(level){const map={'ابتدائي':'السنة الأولى ابتدائي','متوسط':'السنة الأولى متوسط','ثانوي':'السنة الأولى ثانوي'};openYear(map[level],level)}
+function openYear(year,level){currentYear=year;currentLevel=level;currentSubject='';document.getElementById('homeView').style.display='none';const panel=document.getElementById('contentPanel');panel.classList.add('show');document.getElementById('panelTitle').textContent=year;document.getElementById('panelSubtitle').textContent='اختر المادة التي تريد مراجعتها، وستظهر لك الاختبارات والتمارين المتاحة.';document.getElementById('examArea').innerHTML='';document.getElementById('subjectGrid').innerHTML=subjectsByLevel[level].map(s=>`<button class="subject-btn" onclick="selectSubject('${s.replace(/'/g,"\\'")}',this)">${s}</button>`).join('');panel.scrollIntoView({behavior:'smooth'});document.getElementById('sidebar').classList.remove('open')}
+function selectSubject(subject,button){currentSubject=subject;document.querySelectorAll('.subject-btn').forEach(b=>b.classList.remove('active'));button.classList.add('active');const area=document.getElementById('examArea');area.innerHTML=`<div class="section-head"><div><h2>${subject}</h2><p>${currentYear} — اختر نوع المورد</p></div></div><div class="exam-list">${['اختبارات الفصل الأول','اختبارات الفصل الثاني','اختبارات الفصل الثالث','فروض وتمارين للمراجعة'].map((x,i)=>`<article class="exam"><div class="exam-top"><div><h4>${x}</h4><p>موارد ${subject} — ${currentYear}</p></div><span class="count">ملف تجريبي</span></div><div class="exam-actions"><button class="small-btn" onclick="showSolution(this)">عرض التفاصيل</button><button class="small-btn" onclick="alert('أضف رابط ملف PDF الحقيقي داخل بيانات الموقع لفتحه هنا.')">فتح الموضوع PDF</button><button class="small-btn solution" onclick="showSolution(this)">عرض الحل</button></div><div class="solution-box">هذا مكان عرض الحل أو التصحيح. لإضافة حل حقيقي، عدّل نص هذا القسم داخل ملف index.html أو أضف ملف PDF خاصاً بالحل.</div></article>`).join('')}</div>`;area.scrollIntoView({behavior:'smooth',block:'start'})}
+function showSolution(btn){const box=btn.closest('.exam').querySelector('.solution-box');box.classList.toggle('show');btn.textContent=box.classList.contains('show')?'إخفاء التفاصيل':'عرض التفاصيل'}
+function showExtra(name){document.getElementById('homeView').style.display='none';const panel=document.getElementById('contentPanel');panel.classList.add('show');document.getElementById('panelTitle').textContent=name;document.getElementById('panelSubtitle').textContent='هذا القسم جاهز لإضافة المحتوى والملفات الخاصة به.';document.getElementById('subjectGrid').innerHTML='';document.getElementById('examArea').innerHTML='<div class="empty">لم تتم إضافة محتوى لهذا القسم بعد. يمكنك إضافة المقالات والملفات الخاصة بك لاحقاً.</div>';panel.scrollIntoView({behavior:'smooth'});document.getElementById('sidebar').classList.remove('open')}
+function searchSite(){const q=document.getElementById('searchInput').value.trim().toLowerCase();if(!q){document.querySelectorAll('.level-card').forEach(x=>x.style.display='');return}document.getElementById('homeView').style.display='block';document.getElementById('contentPanel').classList.remove('show');document.querySelectorAll('.level-card').forEach(card=>{card.style.display=card.innerText.toLowerCase().includes(q)||card.dataset.search.includes(q)?'':'none'});document.querySelectorAll('.extra').forEach(x=>x.style.display=x.innerText.toLowerCase().includes(q)?'':'none')}
+</script>
+</body>
+</html>
